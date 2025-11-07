@@ -1,39 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="white">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome (brands + solid) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
-    <!--* Navbar -->
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container header-row">
+      <h1 class="brand">Mobile Store</h1>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-ghost">Login</button>
+    </div>
+  </header>
 
-    <div>
-        <h1>Mobile Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button>Login</button>
+  <!-- Simple hero like your screenshot -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <h2>Apple iPhone 13 Pro Max</h2>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration in some form by injected humour.
+      </p>
+      <button class="btn">Buy Now</button>
     </div>
 
-    <!-- banner -->
-    <div>
-        <div>
-            <h2>Welcome to Mobile Store</h2>
-            <p>Your one-stop shop for the latest mobile phones and accessories.</p>
-            <button>Shop Now</button>
+    <!-- Large image under the text -->
+    <div class="hero-image">
+      <img
+        src="https://tanjilmahmud01.github.io/api-practice-plain-JS/assets/cover-image.png"
+        alt="Latest smartphones"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- Search -->
+  <section class="search" aria-label="Search products">
+    <div class="container search-row">
+      <input type="text" placeholder="Search for mobile phones..." aria-label="Search for mobile phones"/>
+      <button class="btn btn-ghost">Search</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+
+    <!-- Top row -->
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>My API Store</h3>
+        <p>Learn How to use API Store</p>
+      </div>
+
+      <div class="footer-actions">
+      <div class="footer-actions">
+        <div class="socials">
+          <a href="#" class="social" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social" aria-label="X (Twitter)">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="social" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
 
-        <div>
-            <!-- App store -->
-            <img src="" alt="">
-        </div>
+        <a href="#" class="btn">Join Premium</a>
+      </div>
     </div>
+
+    <hr class="footer-sep" />
+
+    <!-- Link columns -->
+    <div class="footer-grid">
+      <ul>
+        <li><strong>Products</strong></li>
+        <li><a href="#">Browse Jobs</a></li>
+        <li><a href="#">Remote Jobs</a></li>
+        <li><a href="#">Company Jobs</a></li>
+        <li><a href="#">Startup Jobs</a></li>
+      </ul>
+      <ul>
+        <li><strong>Products</strong></li>
+        <li><a href="#">Browse Jobs</a></li>
+        <li><a href="#">Remote Jobs</a></li>
+        <li><a href="#">Company Jobs</a></li>
+        <li><a href="#">Startup Jobs</a></li>
+      </ul>
+      <ul>
+        <li><strong>Products</strong></li>
+        <li><a href="#">Browse Jobs</a></li>
+        <li><a href="#">Remote Jobs</a></li>
+        <li><a href="#">Company Jobs</a></li>
+        <li><a href="#">Startup Jobs</a></li>
+      </ul>
+      <ul>
+        <li><strong>Products</strong></li>
+        <li><a href="#">Browse Jobs</a></li>
+        <li><a href="#">Remote Jobs</a></li>
+        <li><a href="#">Company Jobs</a></li>
+        <li><a href="#">Startup Jobs</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+   <script src="script.js"></script>
 </body>
 </html>
