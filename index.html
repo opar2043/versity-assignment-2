@@ -1,129 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="white">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mobile Store</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome (brands + solid) -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-</head>
-<body>
-  <!-- Header / Navbar -->
-  <header class="header">
-    <div class="container header-row">
-      <h1 class="brand">Mobile Store</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="btn btn-ghost">Login</button>
-    </div>
-  </header>
-
-  <!-- Simple hero like your screenshot -->
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <h2>Apple iPhone 13 Pro Max</h2>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the majority
-        have suffered alteration in some form by injected humour.
-      </p>
-      <button class="btn">Buy Now</button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="nav">
+      <h1>Mobile Store</h1>
+      <button class="btn">Log In</button>
     </div>
 
-    <!-- Large image under the text -->
-    <div class="hero-image">
-      <img
-        src="https://tanjilmahmud01.github.io/api-practice-plain-JS/assets/cover-image.png"
-        alt="Latest smartphones"
-        loading="lazy"
-      />
-    </div>
-  </section>
-
-  <!-- Search -->
-  <section class="search" aria-label="Search products">
-    <div class="container search-row">
-      <input type="text" placeholder="Search for mobile phones..." aria-label="Search for mobile phones"/>
-      <button class="btn btn-ghost">Search</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container">
-
-    <!-- Top row -->
-    <div class="footer-top">
-      <div class="footer-brand">
-        <h3>My API Store</h3>
-        <p>Learn How to use API Store</p>
+    <!-- Main -->
+    <div class="main">
+      <div class="main-head">
+        <h2 class="">Apple Iphone 13 Pro Max</h2>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration <br />
+          in some form, by injected humou.
+        </p>
+        <div>
+          <button class="btn">Buy Now</button>
+        </div>
       </div>
 
-      <div class="footer-actions">
-      <div class="footer-actions">
-        <div class="socials">
-          <a href="#" class="social" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#" class="social" aria-label="X (Twitter)">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="#" class="social" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+      <div class="main-img">
+        <img
+          src="https://tanjilmahmud01.github.io/api-practice-plain-JS/assets/cover-image.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Search code -->
+
+    <div>
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search_item" type="text" placeholder="Search your mobile" />
+
+        <button onclick="handleSearch()" class="btn">Search</button>
+      </div>
+
+      <!-- Card section -->
+        <div id="cards" class="cards"></div>
+
+
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <!-- Top bar -->
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2>Mobile Store</h2>
+            <p>Shop Now From Here</p>
+          </div>
+
+          <div class="footer-actions">
+            <div class="socials">
+              <a href="#" aria-label="Facebook" class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="X" class="social">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="social">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <button class="btn">Join Premium</button>
+          </div>
         </div>
 
-        <a href="#" class="btn">Join Premium</a>
+        <hr class="footer-sep" />
+
+        <!-- Links grid -->
+        <div class="footer-grid">
+          <div class="f-col">
+            <h4>Products</h4>
+            <a href="#">Products</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Remote Jobs</a>
+            <a href="#">Company Jobs</a>
+            <a href="#">Startup Jobs</a>
+          </div>
+          <div class="f-col">
+            <h4>Products</h4>
+            <a href="#">Products</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Remote Jobs</a>
+            <a href="#">Company Jobs</a>
+            <a href="#">Startup Jobs</a>
+          </div>
+          <div class="f-col">
+            <h4>Products</h4>
+            <a href="#">Products</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Remote Jobs</a>
+            <a href="#">Company Jobs</a>
+            <a href="#">Startup Jobs</a>
+          </div>
+          <div class="f-col">
+            <h4>Products</h4>
+            <a href="#">Products</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Remote Jobs</a>
+            <a href="#">Company Jobs</a>
+            <a href="#">Startup Jobs</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <hr class="footer-sep" />
-
-    <!-- Link columns -->
-    <div class="footer-grid">
-      <ul>
-        <li><strong>Products</strong></li>
-        <li><a href="#">Browse Jobs</a></li>
-        <li><a href="#">Remote Jobs</a></li>
-        <li><a href="#">Company Jobs</a></li>
-        <li><a href="#">Startup Jobs</a></li>
-      </ul>
-      <ul>
-        <li><strong>Products</strong></li>
-        <li><a href="#">Browse Jobs</a></li>
-        <li><a href="#">Remote Jobs</a></li>
-        <li><a href="#">Company Jobs</a></li>
-        <li><a href="#">Startup Jobs</a></li>
-      </ul>
-      <ul>
-        <li><strong>Products</strong></li>
-        <li><a href="#">Browse Jobs</a></li>
-        <li><a href="#">Remote Jobs</a></li>
-        <li><a href="#">Company Jobs</a></li>
-        <li><a href="#">Startup Jobs</a></li>
-      </ul>
-      <ul>
-        <li><strong>Products</strong></li>
-        <li><a href="#">Browse Jobs</a></li>
-        <li><a href="#">Remote Jobs</a></li>
-        <li><a href="#">Company Jobs</a></li>
-        <li><a href="#">Startup Jobs</a></li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
-
-   <script src="script.js"></script>
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
