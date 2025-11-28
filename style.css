@@ -278,6 +278,9 @@
   transform: translateX(2px);
 }
 
+
+
+
 /* Responsive */
 @media (max-width: 900px) {
   .footer-grid {
