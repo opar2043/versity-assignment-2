@@ -1,4 +1,4 @@
-
+// script.js
 function handleSearch() {
   const searchValue = document.getElementById("search_item").value.trim();
   loadMobileData(searchValue || "iphone");
@@ -10,17 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadMobileData(query) {
-  const url = `https://openapi.programming-hero.com/api/phones?search=${encodeURIComponent(query)}`;
-;
+  const url = `https://openapi.programming-hero.com/api/phones?search=${encodeURIComponent(
+    query
+  )}`;
   fetch(url)
-    .then(res => res.json())
-    .then(({ data }) => displayMobileData(data))  // ✅ render the cards
-    .catch(err => {
+    .then((res) => res.json())
+    .then(({ data }) => displayMobileData(data)) // ✅ render the cards
+    .catch((err) => {
       console.error(err);
       displayMobileData([]);
     });
 }
- 
+
 function displayMobileData(mobiles = []) {
   const container = document.getElementById("cards");
   container.innerHTML = "";
@@ -54,25 +55,23 @@ function displayMobileData(mobiles = []) {
   });
 }
 
-
 // ✅ This will be called only when user clicks the button
 const addtocart = (mobile) => {
   console.log("Clicked mobile:", mobile);
 
   //? later you can send to backend like:
 
-  fetch("http://localhost:5000/cart", {
+  fetch("https://server-nu-six-15.vercel.app/cart", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(mobile),
   })
-  .then((data) => {
+    .then((data) => {
       console.log("cart added", data);
       alert(`"${mobile.phone_name}" added to cart successfully!`);
     })
-  .catch((err) =>{
+    .catch((err) => {
       console.log(err);
-      alert(`${err.message} `)
-  })
+      alert(`${err.message} `);
+    });
 };
-
