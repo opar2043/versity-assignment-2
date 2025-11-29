@@ -31,7 +31,7 @@ function displayMobileData(mobiles = []) {
     return;
   }
 
-  mobiles.slice(0, 3).forEach((mobile) => {
+  mobiles.forEach((mobile) => {
     const card = document.createElement("div");
     card.className = "product-card";
     card.innerHTML = `
